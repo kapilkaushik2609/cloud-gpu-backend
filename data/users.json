@@ -1,0 +1,11 @@
+[
+  {
+    "id": "75554c52-d9a4-4e3b-a386-4ec68c9c9831",
+    "name": "Admin",
+    "email": "admin@neural.cloud",
+    "password_hash": "$2b$12$ZbsPg2CyS/48yaXdrT8fPenehQh3PfCipY0lD7SEGN13z4A/oCoca",
+    "role": "admin",
+    "is_active": true,
+    "created_at": 1782714475.6851845
+  }
+]
