@@ -16,7 +16,7 @@ def my_instance(user: dict = Depends(auth_svc.get_current_user)):
     if not info:
         return None
     status = docker_svc.get_container_status(info["container_id"])
-    return {**info, "status": status}
+    return {**info, "status": status, "ssh": docker_svc._build_ssh(info)}
 
 @router.delete("/mine")
 def deprovision_mine(user: dict = Depends(auth_svc.get_current_user)):

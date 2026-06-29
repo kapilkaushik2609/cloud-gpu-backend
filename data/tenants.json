@@ -1,1 +1,18 @@
-{}
+{
+  "33026774-8905-45af-94d9-4afcb175a7cf": {
+    "container_id": "1cde1bffffebe0d126b506fd083c037a0d53db35ad2bae7c0cf8932d0fdd1e87",
+    "container_name": "nc-shubham-248b92",
+    "gpu": 1,
+    "gpu_memory_gb": 4,
+    "gpu_fraction": 0.2,
+    "cpus": "2",
+    "memory_gb": "8g",
+    "storage_gb": 20,
+    "image": "nvidia/cuda:12.4.0-base-ubuntu22.04",
+    "ssh_port": 32087,
+    "ssh_password": "Oqo73nzj4ybx",
+    "created_at": 1782716114.7731147,
+    "user_id": "33026774-8905-45af-94d9-4afcb175a7cf",
+    "user_name": "Shubham"
+  }
+}

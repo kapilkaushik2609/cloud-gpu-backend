@@ -33,6 +33,15 @@ def setup_ssh(container, password: str):
         if code != 0:
             raise HTTPException(500, f"SSH setup failed: {cmd} → {out.decode()[:200]}")
 
+def _build_ssh(record: dict) -> dict:
+    return {
+        "host":     SERVER_IP,
+        "port":     record["ssh_port"],
+        "username": "root",
+        "password": record.get("ssh_password", ""),
+        "command":  f"ssh root@{SERVER_IP} -p {record['ssh_port']}",
+    }
+
 def provision_container(user: dict, req) -> dict:
     user_id = user["id"]
 
@@ -103,6 +112,7 @@ def provision_container(user: dict, req) -> dict:
         "storage_gb":     req.storage_gb,
         "image":          req.image,
         "ssh_port":       ssh_port,
+        "ssh_password":   password,
         "created_at":     time.time(),
         "user_id":        user_id,
         "user_name":      user["name"],
@@ -113,13 +123,7 @@ def provision_container(user: dict, req) -> dict:
     return {
         **record,
         "status": "running",
-        "ssh": {
-            "host":    SERVER_IP,
-            "port":    ssh_port,
-            "user":    "root",
-            "password": password,
-            "command": f"ssh root@{SERVER_IP} -p {ssh_port}",
-        },
+        "ssh": _build_ssh({**record, "ssh_password": password}),
     }
 
 def deprovision_container(user_id: str) -> dict:

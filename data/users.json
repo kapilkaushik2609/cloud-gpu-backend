@@ -7,5 +7,14 @@
     "role": "admin",
     "is_active": true,
     "created_at": 1782714475.6851845
+  },
+  {
+    "id": "33026774-8905-45af-94d9-4afcb175a7cf",
+    "name": "Shubham",
+    "email": "skp@gmail.com",
+    "password_hash": "$2b$12$p29op30CLtDBSvnKQ8lkBeP7c3iFej50VyvJrYkqgcxoO6DSDOEvW",
+    "role": "customer",
+    "is_active": true,
+    "created_at": 1782715127.82758
   }
 ]

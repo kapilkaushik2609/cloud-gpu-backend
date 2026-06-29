@@ -4,3 +4,108 @@ Traceback (most recent call last):
     version = _bcrypt.__about__.__version__
 AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-06-29 11:57:55  INFO      Default admin created: admin@neural.cloud
+2026-06-29 12:05:08  WARNING   (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/home/block2/cloud-gpu-backend/venv/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-06-29 12:05:27  WARNING   (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/home/block2/cloud-gpu-backend/venv/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-06-29 12:08:19  INFO      POST /auth/login  status=200  300ms
+2026-06-29 12:08:19  INFO      GET /admin/tenants  status=200  2ms
+2026-06-29 12:08:19  INFO      GET /gpu/status  status=200  10ms
+2026-06-29 12:08:19  INFO      GET /admin/tenants  status=200  10ms
+2026-06-29 12:08:19  INFO      GET /gpu/status  status=200  7ms
+2026-06-29 12:08:47  INFO      POST /auth/signup  status=200  330ms
+2026-06-29 12:08:47  INFO      GET /provision/mine  status=200  3ms
+2026-06-29 12:08:47  INFO      GET /provision/mine  status=200  3ms
+2026-06-29 12:08:59  INFO      GET /provision/mine  status=200  2ms
+2026-06-29 12:09:08  INFO      MPS started for GPU 1
+2026-06-29 12:09:08  INFO      Provisioning  user=33026774-8905-45af-94d9-4afcb175a7cf  gpu=1  vram=4GB  port=32035
+2026-06-29 12:09:11  INFO      GET /provision/mine  status=200  3ms
+2026-06-29 12:09:23  INFO      GET /provision/mine  status=200  3ms
+2026-06-29 12:09:35  INFO      Provisioned  user=33026774-8905-45af-94d9-4afcb175a7cf  container=nc-shubham-8bcf36
+2026-06-29 12:09:35  INFO      POST /provision  status=200  27039ms
+2026-06-29 12:09:35  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:09:36  INFO      GET /provision/mine  status=200  4ms
+2026-06-29 12:09:36  INFO      GET /gpu/usage  status=200  19ms
+2026-06-29 12:09:36  INFO      GET /gpu/usage  status=200  20ms
+2026-06-29 12:09:47  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:09:47  INFO      GET /gpu/usage  status=200  28ms
+2026-06-29 12:09:59  INFO      GET /provision/mine  status=200  6ms
+2026-06-29 12:09:59  INFO      GET /gpu/usage  status=200  23ms
+2026-06-29 12:10:12  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:10:12  INFO      GET /gpu/usage  status=200  28ms
+2026-06-29 12:10:23  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:10:23  INFO      GET /gpu/usage  status=200  19ms
+2026-06-29 12:10:36  INFO      GET /provision/mine  status=200  6ms
+2026-06-29 12:10:36  INFO      GET /gpu/usage  status=200  21ms
+2026-06-29 12:10:48  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:10:48  INFO      GET /gpu/usage  status=200  26ms
+2026-06-29 12:11:00  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:11:00  INFO      GET /gpu/usage  status=200  17ms
+2026-06-29 12:11:12  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:11:12  INFO      GET /gpu/usage  status=200  19ms
+2026-06-29 12:11:24  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:11:24  INFO      GET /gpu/usage  status=200  16ms
+2026-06-29 12:11:42  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:11:42  INFO      GET /gpu/usage  status=200  16ms
+2026-06-29 12:24:20  INFO      POST /auth/login  status=200  571ms
+2026-06-29 12:24:20  INFO      GET /provision/mine  status=200  7ms
+2026-06-29 12:24:20  INFO      GET /provision/mine  status=200  10ms
+2026-06-29 12:24:20  INFO      GET /gpu/usage  status=200  24ms
+2026-06-29 12:24:20  INFO      GET /gpu/usage  status=200  19ms
+2026-06-29 12:24:39  INFO      Deprovisioned  user=33026774-8905-45af-94d9-4afcb175a7cf  container=nc-shubham-8bcf36
+2026-06-29 12:24:39  INFO      DELETE /provision/mine  status=200  6107ms
+2026-06-29 12:24:39  INFO      GET /provision/mine  status=200  3ms
+2026-06-29 12:24:44  INFO      GET /provision/mine  status=200  3ms
+2026-06-29 12:24:45  INFO      MPS started for GPU 1
+2026-06-29 12:24:45  INFO      Provisioning  user=33026774-8905-45af-94d9-4afcb175a7cf  gpu=1  vram=4GB  port=32087
+2026-06-29 12:24:56  INFO      GET /provision/mine  status=200  3ms
+2026-06-29 12:25:08  INFO      GET /provision/mine  status=200  3ms
+2026-06-29 12:25:14  INFO      Provisioned  user=33026774-8905-45af-94d9-4afcb175a7cf  container=nc-shubham-248b92
+2026-06-29 12:25:14  INFO      POST /provision  status=200  29485ms
+2026-06-29 12:25:14  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:25:14  INFO      GET /gpu/usage  status=200  26ms
+2026-06-29 12:25:20  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:25:20  INFO      GET /gpu/usage  status=200  15ms
+2026-06-29 12:25:32  INFO      GET /provision/mine  status=200  4ms
+2026-06-29 12:25:32  INFO      GET /gpu/usage  status=200  23ms
+2026-06-29 12:25:44  INFO      GET /provision/mine  status=200  5ms
+2026-06-29 12:25:44  INFO      GET /gpu/usage  status=200  22ms
+2026-06-29 12:25:56  INFO      GET /provision/mine  status=200  4ms
+2026-06-29 12:25:56  INFO      GET /gpu/usage  status=200  23ms
+2026-06-29 12:26:07  INFO      POST /auth/login  status=200  310ms
+2026-06-29 12:26:07  INFO      GET /provision/mine  status=200  4ms
+2026-06-29 12:26:07  INFO      GET /provision/mine  status=200  8ms
+2026-06-29 12:26:07  INFO      GET /gpu/usage  status=200  26ms
+2026-06-29 12:26:07  INFO      GET /gpu/usage  status=200  17ms
+2026-06-29 12:26:19  INFO      GET /provision/mine  status=200  6ms
+2026-06-29 12:26:19  INFO      GET /gpu/usage  status=200  27ms
+2026-06-29 12:26:32  INFO      POST /auth/login  status=200  317ms
+2026-06-29 12:26:32  INFO      GET /gpu/status  status=200  7ms
+2026-06-29 12:26:32  INFO      GET /admin/tenants  status=200  9ms
+2026-06-29 12:26:32  INFO      GET /gpu/status  status=200  4ms
+2026-06-29 12:26:32  INFO      GET /admin/tenants  status=200  6ms
+2026-06-29 12:26:32  INFO      GET /gpu/usage/33026774-8905-45af-94d9-4afcb175a7cf  status=200  20ms
+2026-06-29 12:26:33  INFO      GET /gpu/usage/33026774-8905-45af-94d9-4afcb175a7cf  status=200  21ms
+2026-06-29 12:26:48  INFO      POST /auth/login  status=200  316ms
+2026-06-29 12:26:48  INFO      GET /admin/tenants  status=200  13ms
+2026-06-29 12:26:48  INFO      GET /admin/tenants  status=200  13ms
+2026-06-29 12:26:48  INFO      GET /gpu/status  status=200  16ms
+2026-06-29 12:26:48  INFO      GET /gpu/status  status=200  17ms
+2026-06-29 12:26:48  INFO      GET /gpu/usage/33026774-8905-45af-94d9-4afcb175a7cf  status=200  21ms
+2026-06-29 12:26:48  INFO      GET /gpu/usage/33026774-8905-45af-94d9-4afcb175a7cf  status=200  23ms
+2026-06-29 12:28:30  INFO      POST /auth/login  status=200  317ms
+2026-06-29 12:28:30  INFO      GET /gpu/status  status=200  2ms
+2026-06-29 12:28:30  INFO      GET /admin/tenants  status=200  11ms
+2026-06-29 12:28:30  INFO      GET /admin/tenants  status=200  13ms
+2026-06-29 12:28:30  INFO      GET /gpu/status  status=200  16ms
+2026-06-29 12:28:30  INFO      GET /gpu/usage/33026774-8905-45af-94d9-4afcb175a7cf  status=200  31ms
+2026-06-29 12:28:30  INFO      GET /gpu/usage/33026774-8905-45af-94d9-4afcb175a7cf  status=200  27ms
+2026-06-29 12:28:45  INFO      GET /gpu/status  status=200  5ms
+2026-06-29 12:28:45  INFO      GET /admin/tenants  status=200  9ms
+2026-06-29 12:28:45  INFO      GET /gpu/usage/33026774-8905-45af-94d9-4afcb175a7cf  status=200  24ms
