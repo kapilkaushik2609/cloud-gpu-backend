@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from config import LOG_FILE, DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD, DEFAULT_ADMIN_NAME
 import services.storage as db
 import services.auth_service as auth_svc
-from routers import auth, provision, gpu, admin
+from routers import auth, provision, gpu, admin, billing
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -48,6 +48,7 @@ app.include_router(auth.router,      prefix="/auth",      tags=["Auth"])
 app.include_router(provision.router, prefix="/provision", tags=["Provision"])
 app.include_router(gpu.router,       prefix="/gpu",       tags=["GPU"])
 app.include_router(admin.router,     prefix="/admin",     tags=["Admin"])
+app.include_router(billing.router,   prefix="/billing",   tags=["Billing"])
 
 @app.get("/health")
 def health():

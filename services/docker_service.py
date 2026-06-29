@@ -4,6 +4,7 @@ from fastapi import HTTPException
 from config import SSH_PORT_RANGE, SERVER_IP, MPS_PIPE_DIR, GPU_VRAM_GB, DEFAULT_VRAM_GB
 import services.storage as db
 import services.gpu_service as gpu_svc
+import services.billing_service as billing_svc
 
 logger  = logging.getLogger("neural_cloud")
 CLIENT  = docker.from_env()
@@ -138,6 +139,10 @@ def deprovision_container(user_id: str) -> dict:
         c.remove()
     except docker.errors.NotFound:
         pass
+
+    # Generate invoice before removing tenant
+    user = db.find_user_by_id(user_id) or {"id": user_id, "name": info.get("user_name", ""), "email": ""}
+    billing_svc.generate_invoice(user, info, db.get_pricing())
 
     db.remove_tenant(user_id)
 
